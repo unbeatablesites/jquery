@@ -17,6 +17,9 @@
       var newDiv = $("<div>");
       newDiv.text("A pleasure to meet you!");
 
+      var newNewDiv = $("<div>");
+      newNewDiv.text("Here is a new new div haha!");
+
       // NOTICE THE DIFFERENCE
       // ---------------------
       // $("#empty-div")   <-- FIND a DOM node with the ID empty-div
@@ -24,6 +27,9 @@
 
       // We can then  append it to the other div using the same ".append" method.
       $("#empty-div").append(newDiv);
+      $("#empty-div")
+        .append(newDiv)
+        .append(newNewDiv);
     </script>
   </body>
 </html>
