@@ -12,27 +12,6 @@
       crossorigin="anonymous"
     />
   </head>
-
-  <body>
-    <div class="jumbotron">
-      <h1 class="display-4 text-center">Random number trigger</h1>
-      <div class="text-center">
-        <a class="btn btn-primary btn-lg" id="randButton">?</a>
-      </div>
-      <h1 class="text-center" id="random-number"></h1>
-    </div>
-
-    <script type="text/javascript">
-      $(document).ready(() => {
-        $("#random-button").on("click", function() {
-          var random = Math.floor(Math.random() * 1000) + 1;
-
-          $("#random-number").text(random);
-        });
-      });
-    </script>
-  </body>
-
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -48,4 +27,24 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
+
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4 text-center">Random number trigger</h1>
+      <div class="text-center">
+        <a class="btn btn-primary btn-lg" id="randButton">?</a>
+      </div>
+      <h1 class="text-center" id="random-number"></h1>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("#randButton").on("click", function() {
+          var random = Math.floor(Math.random() * 1000) + 1;
+
+          $("#random-number").text(random);
+        });
+      });
+    </script>
+  </body>
 </html>
