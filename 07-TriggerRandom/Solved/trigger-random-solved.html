@@ -34,7 +34,7 @@
     <h1 class="text-center" id="random-number"></h1>
 
     <script type="text/javascript">
-      () => {
+      fizz => {
         for (var i = 1; i < 101; i++) {
           if (i % 15 === 0) {
             console.log("FizzBuzz");
@@ -46,6 +46,7 @@
             console.log(i);
           }
         }
+        fizz();
       };
     </script>
   </body>
