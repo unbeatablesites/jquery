@@ -33,11 +33,20 @@
       <h1 class="display-4 text-center">Random number trigger</h1>
       <div class="text-center">
         <a class="btn btn-primary btn-lg" id="randButton">?</a>
+        <a class="btn btn-primary btn-lg" id="another1">?</a>
       </div>
       <h1 class="text-center" id="random-number"></h1>
+      <h1 class="text-center" id="rN"></h1>
     </div>
 
     <script type="text/javascript">
+      $(document).ready(() => {
+        $("#another1").on("click", () => {
+          var random = Math.floor(Math.random() * 1000) + 1;
+          $("#rN").text(random);
+        });
+      });
+
       $(document).ready(() => {
         $("#randButton").on("click", function() {
           var random = Math.floor(Math.random() * 1000) + 1;
