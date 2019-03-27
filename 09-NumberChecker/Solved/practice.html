@@ -52,7 +52,7 @@
         <h2>Computer Pick</h2>
       </div>
       <ul class="list-group list-group-flush">
-        <div class="list-group-item text-center " id="result">???</div>
+        <div class="list-group-item text-center " id="computerPick">???</div>
       </ul>
     </div>
     <!-- first card end -->
@@ -104,7 +104,7 @@
       <div class="card-header text-center">
         <h2>Result</h2>
       </div class="text-center">
-        <h1 id="comPick"></h1>
+        <h1 id="computerPick"></h1>
     </div>
 
     <!-- Third card start -->
@@ -130,7 +130,7 @@
                 $("#result").text(computerPick);
 
 
-                if(parent(yourPick) === computer){
+                if(parseInt(yourPick) === computerPick){
 
                   $("#result").text("Yep you got it. ")
                 }
